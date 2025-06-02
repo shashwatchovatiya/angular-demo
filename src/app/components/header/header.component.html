@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a routerLink="/">
+                    <span>Angular Demo</span>
+                </a>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" [(ngModel)]="searchQuery" placeholder="Search products..." class="search-input">
+                <button class="search-button" (click)="onSearch()">
+                    <i class="search-icon">🔍</i>
+                </button>
+            </div>
+
+            <!-- Add Product Button -->
+            <div class="actions">
+                <button class="add-product-btn" routerLink="/add-product">
+                    <i class="add-icon">+</i> Add Product
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
